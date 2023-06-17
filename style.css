@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+	--primary-color: rgb(13, 13, 241);
+	--secondary-color: #7d9ecc;
+	--font: 'Poppins', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: var(--font);
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.btn {
+	padding: .5rem .5rem;
+	outline: none;
+	border: 1px solid var(--secondary-color);
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: var(--font);
+	color: black;
+	background: var(--secondary-color);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.bg-color {
+	background: var(--primary-color);
+	color: #fff;
+}
+
+body {
+	background: var(--secondary-color);
+}
+
+.topbar {
+	display: flex;
+	justify-content: space-between;
+	background-color: #0949faf9;  
+	/* #0561d0 */
+	align-items: center;
+	height: 80px;
+	padding: 1.5rem 0;
+}
+
+.social-icon {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 20%;
+	height: 40px;
+
+}
+
+.social-icon button:nth-child(1) i {
+	color: red;
+}
+
+.social-icon button:nth-child(2) i {
+	color: red;
+}
+
+.social-icon button:nth-child(3) i {
+	color: red;
+}
+
+.topbar i {
+	margin: 0 .5rem;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.topbar i:hover {
+	color: var(--primary-color);
+}
+
+.logo {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 80%;
+	height: 40px;
+	color: #fff;
+	font-size: 40px;
+}
+
+
+.toggle-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+	height: 40px;
+}
+
+#toggleBTN {
+	display: none;
+	align-items: center;
+	padding: .4rem 0;
+	border: 1px solid var(--primary-color);
+	margin-left: 1rem;
+	color: var(--primary-color);
+}
+
+#menuBTN {
+	display: none;
+}
+
+nav {
+	height: 40px;
+	background: var(--primary-color);
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+
+}
+
+nav ul a {
+	margin: 0 1rem;
+	font-size: 16px;
+	text-transform: uppercase;
+	transition: .3s;
+	color: #fff;
+
+}
+
+nav ul a:hover {
+	color: var(--secondary-color);
+}
+
+nav ul a li {
+	list-style: none;
+}
+
+nav ul a.search li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.banner {
+	height: 80vh;
+	background: black;
+	position: relative;
+}
+
+.banner .IND_P_L {
+	position: absolute;
+	left: 15%;
+	top: 20%;
+}
+
+.banner .IND_P_L h1 {
+	color: #fff;
+	font-size: 40px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.banner img {
+	position: absolute;
+	right: 15%;
+	bottom: 0;
+	height: 95%;
+}
+
+.banner form {
+	margin-top: 1rem;
+}
+
+form input {
+	padding: .5rem .5rem;
+	outline: none;
+	border: 1px solid #fff;
+	color: var(--primary-color);
+	font-family: var(--font);
+	font-size: 16px;
+}
+
+.banner form .btn {
+	border: 1px solid var(--primary-color);
+	flex-wrap: 700;
+}
+
+.sec-title {
+	margin-top: 3rem;
+	width: 40%;
+	color: #fff;
+}
+
+/* Start Team  */
+.team-sec {
+	margin-top: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 350px;
+	background: #fff;
+}
+
+.team-sec .team {
+	width: 40%;
+}
+
+.team-sec .team h4 {
+	color: var(--secondary-color);
+	font-size: 18px;
+	opacity: .7;
+}
+
+.team-sec .team h4 span {
+	border-bottom: 1px solid var(--primary-color);
+}
+
+.team-sec .team h1 {
+	font-size: 40px;
+	letter-spacing: 1px;
+}
+
+.team-sec .team h1 span {
+	color: var(--primary-color);
+}
+
+.team-sec .team p {
+	color: var(--secondary-color);
+	opacity: .7;
+	font-size: 14px;
+}
+
+.team-sec img {
+	height: 100%;
+}
+
+/* End Team  */
+
+/* Start IPL trophy */
+.Ipl-sec {
+	display: flex;
+	justify-content: center;
+	margin-top: 3rem;
+}
+
+.Ipl-sec .card {
+	margin: 1rem;
+	height: 400px;
+	width: 40%;
+	background: var(--primary-color);
+}
+
+.Ipl-sec .card:nth-child(1) {
+	position: relative;
+	padding: 20px;
+	color: #fff;
+}
+
+.Ipl-sec .card:nth-child(1) h3 {
+	font-size: 25px;
+	margin-top: 1rem;
+}
+
+.Ipl-sec .card:nth-child(1) p {
+	font-size: 14px;
+	margin: 2rem 0;
+}
+
+.Ipl-sec .card:nth-child(1) .btn {
+	background: #fff;
+	color: var(--primary-color);
+	border: transparent;
+}
+
+.Ipl-sec .card:nth-child(1) img {
+	position: absolute;
+	bottom: 0;
+	right: 10%;
+	height: 60%;
+}
+
+.Ipl-sec .card:nth-child(2) {
+	background: transparent;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1rem;
+}
+
+.Ipl-sec .card:nth-child(2) .card-img {
+	overflow: hidden;
+}
+
+.Ipl-sec .card:nth-child(2) .card-img img {
+	width: 100%;
+	height: 100%;
+	transition: .5s;
+}
+
+.Ipl-sec .card:nth-child(2) .card-img img:hover {
+	transform: scale(1.3);
+}
+
+/* End IPL Trophy  */
+
+/* Start Live Score  */
+.score-sec div {
+	color: #fff;
+}
+
+.score-sec div h1 {
+	color: var(--primary-color);
+	background: rgba(153, 121, 212, 0.87);
+	font-size: 32px;
+}
+
+/* End Live Score  */
+
+
+
+/* Start Footer  */
+footer {
+	border-top: 2px solid var(--primary-color);
+	margin-top: 3rem;
+}
+
+footer .getTouch {
+	padding: 1rem;
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer .getTouch h1 {
+	color: #fff;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+
+footer .getTouch form {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+	width: 60%;
+	position: relative;
+}
+
+footer .getTouch form input {
+	width: 100%;
+	border-radius: 10px;
+	padding: .6rem 5px;
+}
+
+footer .getTouch form .btn {
+	border-radius: 0 10px 10px 0;
+	position: absolute;
+	top: 5%;
+	right: .1rem;
+	border: none;
+}
+
+footer .footer-nav {
+	padding: 3rem 0;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+footer .footer-nav h3 {
+	color: var(--primary-color);
+	text-transform: uppercase;
+}
+
+footer .footer-nav li {
+	list-style: none;
+	margin-top: .5rem;
+}
+
+footer h4 {
+	padding: .8rem 0;
+	color: #fff;
+	text-align: center;
+	background: var(--primary-color);
+}
+
+@media only screen and (max-width: 900px) {
+	.topbar .social-icon {
+		display: none;
+	}
+
+	.topbar .logo,
+	.toggle-icon {
+		width: 36%;
+	}
+
+	nav {
+		background: transparent;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	nav ul {
+		padding: .5rem 0;
+		display: block;
+		height: 100vh;
+		width: 100%;
+		position: absolute;
+		left: -100%;
+		transform-origin: right;
+		background: var(--secondary-color);
+		transition: .3s;
+		z-index: 999;
+	}
+
+	#toggleBTN {
+		display: flex;
+	}
+
+	#menuBTN:checked~nav ul {
+		left: 0;
+	}
+
+	nav ul li {
+		text-align: center;
+	}
+
+	nav ul a:hover {
+		color: var(--primary-color);
+	}
+
+	.banner .team {
+		left: 5%;
+		top: 9%;
+		width: 70%;
+	}
+
+	.banner .team h1 {
+		font-size: 16px;
+	}
+
+	form input {
+		padding: 0.3rem 0.5rem;
+		font-size: 14px;
+		display: block;
+		width: 100%;
+	}
+
+	form .btn {
+		padding: .3rem .5rem;
+		font-size: 14px;
+		margin-top: 1rem;
+	}
+
+	.banner img {
+		right: 15%;
+		height: 56%;
+	}
+
+
+
+	footer .getTouch form {
+		width: 100%;
+	}
+
+	footer .getTouch form .btn {
+		top: -.9rem;
+		padding: .5rem .5rem;
+	}
+
+	.footer-nav {
+		flex-direction: column;
+	}
+
+	.footer-nav div {
+		text-align: center;
+		margin-top: 1rem;
+	}
+}
